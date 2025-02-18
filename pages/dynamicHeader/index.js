@@ -1,20 +1,8 @@
 import Head from 'next/head';
 
 
-export async function getServerSideProps() {
-    return {
-        props: {
-            data: {
-                name: 'khashayar dynamic train',
-                title: 'ssr page',
-                description: 'a dynamic data to pass to the head'
-            }
-        }
-    };
-}
 
-
-const Index = ({ data }) => {
+function Index ({ data }) {
     const { name, title, description } = data;
 
     return (
@@ -29,3 +17,16 @@ const Index = ({ data }) => {
 };
 
 export default Index;
+
+
+export async function getServerSideProps() {
+    return {
+        props: {
+            data: {
+                name: 'khashayar dynamic train',
+                title: 'ssr page',
+                description: 'a dynamic data to pass to the head'
+            }
+        }
+    };
+}
