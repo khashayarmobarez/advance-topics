@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>khashayar advance learning of nextjs</title>
-        <meta name="description" content="this is and training project"></meta>
+        <meta name="description" content="this is and training project"/>
       </Head>
       <h1 className="">main page</h1>
     </div>

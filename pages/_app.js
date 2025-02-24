@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>back up header</title>
-        <meta name='description'>title for pages that doesnt have their own head</meta>
+        <meta name='description' content="title for pages that doesnt have their own head" />
       </Head>
       <Component {...pageProps} />
     </>
