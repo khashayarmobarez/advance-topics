@@ -1,4 +1,5 @@
 
+import TestPage from "@/components/Templates/TestPage";
 import Head from "next/head";
 
 
@@ -9,7 +10,7 @@ export default function Home() {
         <title>khashayar advance learning of nextjs</title>
         <meta name="description" content="this is and training project"/>
       </Head>
-      <h1 className="">main page</h1>
+      <TestPage />
     </div>
   );
 }
